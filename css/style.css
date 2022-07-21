@@ -151,6 +151,12 @@ second section start
 
 }
 
+.tablet-show-btn{
+    color: white;
+    background-color: white;
+    border: none;
+}
+
 
 /* ----------------
 footer section start
@@ -202,6 +208,13 @@ color: azure;
 padding-right: 20px;
 display: inline-block;
 }
+
+
+
+
+
+
+
 
 
 /*------------------
@@ -280,10 +293,21 @@ display: inline-block;
 
    }
 
-   /* footer code coming */
-.list{
-   
+.tablet-show-btn{
+    display: none;
 }
+
+
+
+
+   /* footer code coming */
+.footer-section ul li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    margin-right: 36px;
+    }
  }
 
 
@@ -379,18 +403,34 @@ display: inline-block;
     
        }
     
+#tablet-hide{
+display: none;
+}
 
-
-
+.tablet-show-btn{
+    color: white;
+    font-size: 14px;
+    background-color: #DD0000;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 30px;
+    margin-bottom: 80px;
+    
+}
 
 }
 
 
 
+/*-------------------------
+ Laptop Screen
+ --------------------------------  */
+
+ @media only screen (max-width: 1024px){
+
+    .tablet-show-btn{
+        display: none;
+    }
 
 
-
-
- 
-
-
+ }
